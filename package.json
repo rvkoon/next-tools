@@ -1,0 +1,31 @@
+{
+  "name": "next-tools",
+  "version": "1.0.0",
+  "description": "tools to imcrease efficiency while working with nextJs",
+  "main": "index.js",
+  "bin": {
+    "next-tools": "./build/index.js"
+  },
+  "scripts": {
+    "test": "test",
+    "start:dev": "npx nodemon",
+    "build": "rm -rf ./build && tsc && mkdir ./build/templates/ && cp ./bin/templates/* ./build/templates/"
+  },
+  "author": "rvkoon",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.14",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/shelljs": "^0.8.11",
+    "@types/yargs": "^17.0.17",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.0.0",
+    "shelljs": "^0.8.5",
+    "yargs": "^17.6.2"
+  }
+}

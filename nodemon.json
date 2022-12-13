@@ -1,0 +1,6 @@
+{
+    "watch": ["bin"],
+    "ext": ".ts,.js,.hbs",
+    "ignore": [],
+    "exec": "npx ts-node ./src/index.ts"
+  }
